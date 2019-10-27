@@ -64,6 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Client.cs" />
+    <Compile Include="Assets\Scripts\ClientHandle.cs" />
+    <Compile Include="Assets\Scripts\ClientSend.cs" />
+    <Compile Include="Assets\Scripts\Packet.cs" />
+    <Compile Include="Assets\Scripts\ThreadManager.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
