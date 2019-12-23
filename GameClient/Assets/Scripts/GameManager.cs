@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>Spawns a player.</summary>
+    /// <param name="_id">The player's ID.</param>
+    /// <param name="_name">The player's name.</param>
+    /// <param name="_position">The player's starting position.</param>
+    /// <param name="_rotation">The player's starting rotation.</param>
     public void SpawnPlayer(int _id, string _username, Vector3 _position, Quaternion _rotation)
     {
         GameObject _player;

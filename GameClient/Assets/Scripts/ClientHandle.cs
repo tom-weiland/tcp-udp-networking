@@ -14,6 +14,7 @@ public class ClientHandle : MonoBehaviour
         Client.instance.myId = _myId;
         ClientSend.WelcomeReceived();
 
+        // Now that we have the client's id, connect UDP
         Client.instance.udp.Connect(((IPEndPoint)Client.instance.tcp.socket.Client.LocalEndPoint).Port);
     }
 

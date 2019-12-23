@@ -26,6 +26,7 @@ namespace GameServer
             inputs = new bool[4];
         }
 
+        /// <summary>Processes player input and moves the player.</summary>
         public void Update()
         {
             Vector2 _inputDirection = Vector2.Zero;
@@ -49,6 +50,8 @@ namespace GameServer
             Move(_inputDirection);
         }
 
+        /// <summary>Calculates the player's desired movement direction and moves him.</summary>
+        /// <param name="_inputDirection"></param>
         private void Move(Vector2 _inputDirection)
         {
             Vector3 _forward = Vector3.Transform(new Vector3(0, 0, 1), rotation);
@@ -61,6 +64,9 @@ namespace GameServer
             ServerSend.PlayerRotation(this);
         }
 
+        /// <summary>Updates the player input with newly received input.</summary>
+        /// <param name="_inputs">The new key inputs.</param>
+        /// <param name="_rotation">The new rotation.</param>
         public void SetInput(bool[] _inputs, Quaternion _rotation)
         {
             inputs = _inputs;

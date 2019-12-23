@@ -17,6 +17,9 @@ namespace GameServer
         private static TcpListener tcpListener;
         private static UdpClient udpListener;
 
+        /// <summary>Starts the server.</summary>
+        /// <param name="_maxPlayers">The maximum players that can be connected simultaneously.</param>
+        /// <param name="_port">The port to start the server on.</param>
         public static void Start(int _maxPlayers, int _port)
         {
             MaxPlayers = _maxPlayers;
@@ -35,6 +38,7 @@ namespace GameServer
             Console.WriteLine($"Server started on port {Port}.");
         }
 
+        /// <summary>Handles new TCP connections.</summary>
         private static void TCPConnectCallback(IAsyncResult _result)
         {
             TcpClient _client = tcpListener.EndAcceptTcpClient(_result);
@@ -53,6 +57,7 @@ namespace GameServer
             Console.WriteLine($"{_client.Client.RemoteEndPoint} failed to connect: Server full!");
         }
 
+        /// <summary>Receives incoming UDP data.</summary>
         private static void UDPReceiveCallback(IAsyncResult _result)
         {
             try
@@ -77,12 +82,14 @@ namespace GameServer
 
                     if (clients[_clientId].udp.endPoint == null)
                     {
+                        // If this is a new connection
                         clients[_clientId].udp.Connect(_clientEndPoint);
                         return;
                     }
 
                     if (clients[_clientId].udp.endPoint.ToString() == _clientEndPoint.ToString())
                     {
+                        // Ensures that the client is not being impersonated by another by sending a false clientID
                         clients[_clientId].udp.HandleData(_packet);
                     }
                 }
@@ -93,6 +100,9 @@ namespace GameServer
             }
         }
 
+        /// <summary>Sends a packet to the specified endpoint via UDP.</summary>
+        /// <param name="_clientEndPoint">The endpoint to send the packet to.</param>
+        /// <param name="_packet">The packet to send.</param>
         public static void SendUDPData(IPEndPoint _clientEndPoint, Packet _packet)
         {
             try
@@ -108,6 +118,7 @@ namespace GameServer
             }
         }
 
+        /// <summary>Initializes all necessary server data.</summary>
         private static void InitializeServerData()
         {
             for (int i = 1; i <= MaxPlayers; i++)
