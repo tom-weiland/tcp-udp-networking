@@ -126,10 +126,16 @@ public class Server
         }
 
         packetHandlers = new Dictionary<int, PacketHandler>()
-            {
-                { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
-                { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement },
-            };
+        {
+            { (int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
+            { (int)ClientPackets.playerMovement, ServerHandle.PlayerMovement },
+        };
         Debug.Log("Initialized packets.");
+    }
+
+    public static void Stop()
+    {
+        tcpListener.Stop();
+        udpListener.Close();
     }
 }
