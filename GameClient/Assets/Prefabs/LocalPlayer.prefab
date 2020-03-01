@@ -216,7 +216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7677484484946083636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 321.8996, y: 107.521034, z: -300.09445}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8720703571214989855}
@@ -238,6 +238,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   username: 
+  health: 0
+  maxHealth: 100
+  model: {fileID: 829117775900897876}
 --- !u!114 &6761221046541469059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,3 +253,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bdcd1c6445aa2c44941c68487443478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camTransform: {fileID: 1243984683900922996}

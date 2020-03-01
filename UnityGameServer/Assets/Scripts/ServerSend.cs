@@ -128,5 +128,36 @@ public class ServerSend
             SendUDPDataToAll(_player.id, _packet);
         }
     }
+
+    public static void PlayerDisconnected(int _playerId)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.playerDisconnected))
+        {
+            _packet.Write(_playerId);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
+
+    public static void PlayerHealth(Player _player)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.playerHealth))
+        {
+            _packet.Write(_player.id);
+            _packet.Write(_player.health);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
+
+    public static void PlayerRespawned(Player _player)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.playerRespawned))
+        {
+            _packet.Write(_player.id);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
     #endregion
 }
