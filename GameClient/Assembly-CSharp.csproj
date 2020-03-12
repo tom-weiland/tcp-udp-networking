@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\ClientHandle.cs" />
     <Compile Include="Assets\Scripts\ClientSend.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\ItemSpawner.cs" />
     <Compile Include="Assets\Scripts\Packet.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />

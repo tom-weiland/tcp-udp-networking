@@ -235,6 +235,11 @@ public class Client
                 ServerSend.SpawnPlayer(_client.id, player);
             }
         }
+
+        foreach (ItemSpawner _itemSpawner in ItemSpawner.spawners.Values)
+        {
+            ServerSend.CreateItemSpawner(id, _itemSpawner.spawnerId, _itemSpawner.transform.position, _itemSpawner.hasItem);
+        }
     }
 
     /// <summary>Disconnects the client and stops all network traffic.</summary>
