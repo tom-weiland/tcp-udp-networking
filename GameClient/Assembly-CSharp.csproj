@@ -72,22 +72,23 @@
     <Compile Include="Assets\Scripts\Packet.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectileManager.cs" />
     <Compile Include="Assets\Scripts\ThreadManager.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.7f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -291,13 +292,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.7f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>D:/tomdw/Desktop/Networking/Tutorial/GameClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/tomdw/Documents/Programming/Networking/Tutorial/GameClient/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.7f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

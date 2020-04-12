@@ -12,6 +12,11 @@ public class PlayerController : MonoBehaviour
         {
             ClientSend.PlayerShoot(camTransform.forward);
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            ClientSend.PlayerThrowItem(camTransform.forward);
+        }
     }
 
     private void FixedUpdate()
