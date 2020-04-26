@@ -53,6 +53,10 @@ public class Projectile : MonoBehaviour
             {
                 _collider.GetComponent<Player>().TakeDamage(explosionDamage);
             }
+            else if (_collider.CompareTag("Enemy"))
+            {
+                _collider.GetComponent<Enemy>().TakeDamage(explosionDamage);
+            }
         }
 
         projectiles.Remove(id);

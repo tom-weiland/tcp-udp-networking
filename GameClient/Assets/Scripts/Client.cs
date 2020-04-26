@@ -33,12 +33,6 @@ public class Client : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        tcp = new TCP();
-        udp = new UDP();
-    }
-
     private void OnApplicationQuit()
     {
         Disconnect(); // Disconnect when the game is closed
@@ -47,6 +41,9 @@ public class Client : MonoBehaviour
     /// <summary>Attempts to connect to the server.</summary>
     public void ConnectToServer()
     {
+        tcp = new TCP();
+        udp = new UDP();
+
         InitializeClientData();
 
         isConnected = true;
@@ -309,7 +306,10 @@ public class Client : MonoBehaviour
             { (int)ServerPackets.itemPickedUp, ClientHandle.ItemPickedUp },
             { (int)ServerPackets.spawnProjectile, ClientHandle.SpawnProjectile },
             { (int)ServerPackets.projectilePosition, ClientHandle.ProjectilePosition },
-            { (int)ServerPackets.projectileExploded, ClientHandle.ProjectileExploded }
+            { (int)ServerPackets.projectileExploded, ClientHandle.ProjectileExploded },
+            { (int)ServerPackets.spawnEnemy, ClientHandle.SpawnEnemy },
+            { (int)ServerPackets.enemyPosition, ClientHandle.EnemyPosition },
+            { (int)ServerPackets.enemyHealth, ClientHandle.EnemyHealth },
         };
         Debug.Log("Initialized packets.");
     }
