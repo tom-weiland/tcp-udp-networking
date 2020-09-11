@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager instance;
 
     public GameObject startMenu;
+    public GameObject menuCamera;
     public InputField usernameField;
 
     private void Awake()
@@ -29,5 +30,6 @@ public class UIManager : MonoBehaviour
         startMenu.SetActive(false);
         usernameField.interactable = false;
         Client.instance.ConnectToServer();
+        menuCamera.SetActive(false);
     }
 }
