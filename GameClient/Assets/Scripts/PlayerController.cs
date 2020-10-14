@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Transform camTransform;
+    public GameObject pauseMenu;
 
     private void Update()
     {
@@ -33,4 +34,5 @@ public class PlayerController : MonoBehaviour
 
         ClientSend.PlayerMovement(_inputs);
     }
+
 }
