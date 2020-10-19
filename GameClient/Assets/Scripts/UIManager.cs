@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -11,7 +10,6 @@ public class UIManager : MonoBehaviour
 
     public GameObject startMenu;
     public GameObject pauseMenu;
-    public GameObject crosshair;
 
     public InputField usernameField;
 
@@ -37,17 +35,20 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void ConnectToMap()
+    {
+        SceneManager.LoadScene("Map1");
+        ConnectToServer();
+    }
 
     /// <summary>Attempts to connect to the server.</summary>
     public void ConnectToServer()
     {
-        Client.instance.ConnectToServer();
-        startMenu.SetActive(false);
-        crosshair.SetActive(true);
+        SceneManager.LoadScene("Map1");
+        //startMenu.SetActive(false);
         usernameField.interactable = false;
-       
+        Client.instance.ConnectToServer();
     }
-
 
 
     public void TogglePauseMenu()
@@ -55,12 +56,10 @@ public class UIManager : MonoBehaviour
         if (Cursor.lockState == CursorLockMode.None)
         {
             pauseMenu.SetActive(false);
-            crosshair.SetActive(true);
         }
         else
         {
             pauseMenu.SetActive(true);
-            crosshair.SetActive(false);
         }
     }
 }

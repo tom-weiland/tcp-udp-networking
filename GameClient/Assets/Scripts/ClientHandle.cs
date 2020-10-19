@@ -12,7 +12,6 @@ public class ClientHandle : MonoBehaviour
 
         Debug.Log($"Message from server: {_msg}");
         Client.instance.myId = _myId;
-
         ClientSend.WelcomeReceived();
 
         // Now that we have the client's id, connect UDP
