@@ -122,7 +122,10 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
 --- !u!1 &30736338
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +245,9 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30736338}
   m_CullTransparentMesh: 0
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 --- !u!1 &47699596
 GameObject:
@@ -374,7 +380,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 47699596}
   m_CullTransparentMesh: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &186321825
+=======
+--- !u!1 &97368813
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!1 &97368813
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -386,26 +396,37 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 186321826}
   - component: {fileID: 186321828}
   - component: {fileID: 186321827}
   m_Layer: 5
   m_Name: Start
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - component: {fileID: 97368814}
   - component: {fileID: 97368817}
   - component: {fileID: 97368816}
   - component: {fileID: 97368815}
   m_Layer: 5
   m_Name: Resume
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 0
 --- !u!224 &186321826
+=======
+  m_IsActive: 1
+--- !u!224 &97368814
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_IsActive: 1
 --- !u!224 &97368814
@@ -415,6 +436,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 186321825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
@@ -433,6 +455,8 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186321827
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 97368813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -448,6 +472,9 @@ RectTransform:
   m_SizeDelta: {x: 260, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97368815
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,8 +482,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 186321825}
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 97368813}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -512,6 +542,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97368813}
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -520,7 +553,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -530,7 +567,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+=======
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -544,7 +585,11 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!222 &186321828
+=======
+--- !u!222 &97368817
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!222 &97368817
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -554,9 +599,15 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 186321825}
   m_CullTransparentMesh: 0
 --- !u!1 &249907025
+=======
+  m_GameObject: {fileID: 97368813}
+  m_CullTransparentMesh: 0
+--- !u!1 &186321825
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 97368813}
   m_CullTransparentMesh: 0
@@ -570,25 +621,36 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 249907026}
   - component: {fileID: 249907028}
   - component: {fileID: 249907027}
   m_Layer: 5
   m_Name: Placeholder
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - component: {fileID: 186321826}
   - component: {fileID: 186321828}
   - component: {fileID: 186321827}
   m_Layer: 5
   m_Name: Start
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_IsActive: 1
 --- !u!224 &249907026
+=======
+  m_IsActive: 0
+--- !u!224 &186321826
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_IsActive: 0
 --- !u!224 &186321826
@@ -599,6 +661,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 249907025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -606,6 +669,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1226664105}
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 186321825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -614,27 +679,37 @@ RectTransform:
   - {fileID: 1226664105}
   - {fileID: 47699597}
   m_Father: {fileID: 986874949}
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &249907027
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_AnchoredPosition: {x: 0, y: -0.000061035156}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &186321827
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 249907025}
   m_Enabled: 1
@@ -645,6 +720,8 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 186321825}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -653,12 +730,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -676,6 +757,8 @@ MonoBehaviour:
   m_Text: Username...
 --- !u!222 &249907028
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -687,6 +770,9 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &186321828
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -694,9 +780,15 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 249907025}
   m_CullTransparentMesh: 0
 --- !u!1 &749271047
+=======
+  m_GameObject: {fileID: 186321825}
+  m_CullTransparentMesh: 0
+--- !u!1 &199262596
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 186321825}
   m_CullTransparentMesh: 0
@@ -710,6 +802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 749271050}
   - component: {fileID: 749271049}
   - component: {fileID: 749271048}
@@ -717,6 +810,8 @@ GameObject:
   m_Name: Main Camera
   m_TagString: MainCamera
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - component: {fileID: 199262597}
   - component: {fileID: 199262600}
   - component: {fileID: 199262599}
@@ -724,14 +819,22 @@ GameObject:
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!81 &749271048
 AudioListener:
+=======
+--- !u!224 &199262597
+RectTransform:
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!224 &199262597
 RectTransform:
@@ -741,11 +844,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 749271047}
   m_Enabled: 1
 --- !u!20 &749271049
 Camera:
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 199262596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1211,6 +1317,9 @@ AudioListener:
   m_Enabled: 1
 --- !u!20 &749271049
 Camera:
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1301,7 +1410,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startMenu: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   pauseMenu: {fileID: 0}
+=======
+  pauseMenu: {fileID: 1763553917}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   pauseMenu: {fileID: 1763553917}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -1379,13 +1492,19 @@ RectTransform:
   m_Children:
   - {fileID: 186321826}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Father: {fileID: 0}
   m_RootOrder: 3
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - {fileID: 1360063286}
   - {fileID: 1763553920}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1478,6 +1597,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1035164527}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
@@ -1488,6 +1608,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1226664104
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1035164527}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
@@ -1808,6 +1930,9 @@ CanvasRenderer:
   m_GameObject: {fileID: 1242964308}
   m_CullTransparentMesh: 0
 --- !u!1 &1305126696
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1226664105}
   - component: {fileID: 1226664108}
   - component: {fileID: 1226664107}
@@ -1824,11 +1950,16 @@ GameObject:
   m_Layer: 5
   m_Name: InputField
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - component: {fileID: 1305126697}
   - component: {fileID: 1305126699}
   - component: {fileID: 1305126698}
   m_Layer: 5
   m_Name: Text
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1836,7 +1967,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!224 &1226664105
+=======
+--- !u!224 &1305126697
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!224 &1305126697
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -1845,6 +1980,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1226664104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -1863,6 +1999,8 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1226664106
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1305126696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1877,12 +2015,16 @@ RectTransform:
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305126698
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1226664104}
   m_Enabled: 1
@@ -1943,6 +2085,8 @@ MonoBehaviour:
   m_ReadOnly: 0
 --- !u!114 &1226664107
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1305126696}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2016,6 +2160,9 @@ RectTransform:
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360063287
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2023,7 +2170,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1226664104}
+=======
+  m_GameObject: {fileID: 1360063285}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 1360063285}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2034,7 +2185,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+=======
+  m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5019608}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.5019608}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2044,8 +2199,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
+=======
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_Sprite: {fileID: 0}
   m_Type: 0
@@ -2059,7 +2219,11 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!222 &1226664108
+=======
+--- !u!222 &1360063288
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!222 &1360063288
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2069,10 +2233,13 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1226664104}
   m_CullTransparentMesh: 0
 --- !u!1 &1242964308
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1360063285}
   m_CullTransparentMesh: 0
 --- !u!1 &1391980249
@@ -2142,6 +2309,9 @@ Transform:
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394791871
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,9 +2321,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1242964309}
   - component: {fileID: 1242964311}
   - component: {fileID: 1242964310}
+=======
+  - component: {fileID: 1394791872}
+  - component: {fileID: 1394791874}
+  - component: {fileID: 1394791873}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   - component: {fileID: 1394791872}
   - component: {fileID: 1394791874}
@@ -2167,7 +2343,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!224 &1242964309
+=======
+--- !u!224 &1394791872
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!224 &1394791872
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2177,6 +2357,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1242964308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2184,12 +2365,17 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 47699597}
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1394791871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30736339}
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2199,7 +2385,11 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1242964310
+=======
+--- !u!114 &1394791873
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!114 &1394791873
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2209,7 +2399,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1242964308}
+=======
+  m_GameObject: {fileID: 1394791871}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 1394791871}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2228,17 +2422,23 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 50
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -2247,8 +2447,13 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Text: Connect
 --- !u!222 &1242964311
+=======
+  m_Text: Escape to Menu
+--- !u!222 &1394791874
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_Text: Escape to Menu
 --- !u!222 &1394791874
@@ -2259,9 +2464,15 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1242964308}
   m_CullTransparentMesh: 0
 --- !u!1 &1305126696
+=======
+  m_GameObject: {fileID: 1394791871}
+  m_CullTransparentMesh: 0
+--- !u!1 &1515711881
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 1394791871}
   m_CullTransparentMesh: 0
@@ -2275,17 +2486,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1305126697}
   - component: {fileID: 1305126699}
   - component: {fileID: 1305126698}
   m_Layer: 5
   m_Name: Text
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - component: {fileID: 1515711882}
   - component: {fileID: 1515711884}
   - component: {fileID: 1515711883}
   m_Layer: 5
   m_Name: Quit
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2293,7 +2510,11 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!224 &1305126697
+=======
+--- !u!224 &1515711882
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!224 &1515711882
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2302,6 +2523,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1305126696}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2318,6 +2540,8 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1305126698
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1515711881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -2332,6 +2556,9 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515711883
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2339,7 +2566,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1305126696}
+=======
+  m_GameObject: {fileID: 1515711881}
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 1515711881}
 >>>>>>> parent of 3a16ee5... part 08 01
@@ -2358,6 +2589,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
@@ -2372,6 +2604,8 @@ MonoBehaviour:
   m_Text: 
 --- !u!222 &1305126699
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -2385,6 +2619,9 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: Quit
 --- !u!222 &1515711884
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2392,9 +2629,15 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1305126696}
   m_CullTransparentMesh: 0
 --- !u!1 &1391980249
+=======
+  m_GameObject: {fileID: 1515711881}
+  m_CullTransparentMesh: 0
+--- !u!1 &1532272901
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
   m_GameObject: {fileID: 1515711881}
   m_CullTransparentMesh: 0
@@ -2408,18 +2651,24 @@ GameObject:
   serializedVersion: 6
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - component: {fileID: 1391980252}
   - component: {fileID: 1391980251}
   - component: {fileID: 1391980250}
   m_Layer: 0
   m_Name: EventSystem
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   - component: {fileID: 1532272902}
   - component: {fileID: 1532272905}
   - component: {fileID: 1532272904}
   - component: {fileID: 1532272903}
   m_Layer: 0
   m_Name: Cube (3)
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2427,8 +2676,13 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &1391980250
 MonoBehaviour:
+=======
+--- !u!4 &1532272902
+Transform:
+>>>>>>> parent of 3a16ee5... part 08 01
 =======
 --- !u!4 &1532272902
 Transform:
@@ -2437,6 +2691,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1391980249}
   m_Enabled: 1
@@ -2453,6 +2708,8 @@ Transform:
   m_ForceModuleActive: 0
 --- !u!114 &1391980251
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1532272901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.5, y: 2.5, z: -2.5}
@@ -2540,12 +2797,16 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 0
 --- !u!114 &1763553918
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1391980249}
   m_Enabled: 1
@@ -2559,6 +2820,8 @@ MonoBehaviour:
 --- !u!4 &1391980252
 Transform:
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1763553917}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -2584,11 +2847,15 @@ Transform:
   m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1763553919
 CanvasRenderer:
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1391980249}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2599,6 +2866,8 @@ CanvasRenderer:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_GameObject: {fileID: 1763553917}
   m_CullTransparentMesh: 0
 --- !u!224 &1763553920
@@ -2623,6 +2892,9 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
 --- !u!1 &1833696945
 GameObject:
@@ -2682,9 +2954,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 =======
+=======
+>>>>>>> parent of 3a16ee5... part 08 01
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869054381
@@ -2862,4 +3137,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938042563}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
+>>>>>>> parent of 3a16ee5... part 08 01
+=======
 >>>>>>> parent of 3a16ee5... part 08 01
