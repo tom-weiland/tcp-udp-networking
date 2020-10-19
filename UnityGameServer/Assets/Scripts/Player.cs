@@ -11,8 +11,11 @@ public class Player : MonoBehaviour
     public float gravity = -9.81f;
     public float moveSpeed = 5f;
     public float jumpSpeed = 5f;
+    public float throwForce = 600f;
     public float health;
     public float maxHealth = 100f;
+    public int itemAmount = 0;
+    public int maxItemAmount = 3;
 
     private bool[] inputs;
     private float yVelocity = 0;
@@ -97,12 +100,35 @@ public class Player : MonoBehaviour
 
     public void Shoot(Vector3 _viewDirection)
     {
+        if (health <= 0f)
+        {
+            return;
+        }
+
         if (Physics.Raycast(shootOrigin.position, _viewDirection, out RaycastHit _hit, 25f))
         {
             if (_hit.collider.CompareTag("Player"))
             {
                 _hit.collider.GetComponent<Player>().TakeDamage(50f);
             }
+            else if (_hit.collider.CompareTag("Enemy"))
+            {
+                _hit.collider.GetComponent<Enemy>().TakeDamage(50f);
+            }
+        }
+    }
+
+    public void ThrowItem(Vector3 _viewDirection)
+    {
+        if (health <= 0f)
+        {
+            return;
+        }
+
+        if (itemAmount > 0)
+        {
+            itemAmount--;
+            NetworkManager.instance.InstantiateProjectile(shootOrigin).Initialize(_viewDirection, throwForce, id);
         }
     }
 
@@ -133,5 +159,16 @@ public class Player : MonoBehaviour
         health = maxHealth;
         controller.enabled = true;
         ServerSend.PlayerRespawned(this);
+    }
+
+    public bool AttemptPickupItem()
+    {
+        if (itemAmount >= maxItemAmount)
+        {
+            return false;
+        }
+
+        itemAmount++;
+        return true;
     }
 }

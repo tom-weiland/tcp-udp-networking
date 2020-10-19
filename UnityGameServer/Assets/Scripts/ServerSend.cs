@@ -159,5 +159,116 @@ public class ServerSend
             SendTCPDataToAll(_packet);
         }
     }
+
+    public static void CreateItemSpawner(int _toClient, int _spawnerId, Vector3 _spawnerPosition, bool _hasItem)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.createItemSpawner))
+        {
+            _packet.Write(_spawnerId);
+            _packet.Write(_spawnerPosition);
+            _packet.Write(_hasItem);
+
+            SendTCPData(_toClient, _packet);
+        }
+    }
+
+    public static void ItemSpawned(int _spawnerId)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.itemSpawned))
+        {
+            _packet.Write(_spawnerId);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
+
+    public static void ItemPickedUp(int _spawnerId, int _byPlayer)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.itemPickedUp))
+        {
+            _packet.Write(_spawnerId);
+            _packet.Write(_byPlayer);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
+
+    public static void SpawnProjectile(Projectile _projectile, int _thrownByPlayer)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.spawnProjectile))
+        {
+            _packet.Write(_projectile.id);
+            _packet.Write(_projectile.transform.position);
+            _packet.Write(_thrownByPlayer);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
+
+    public static void ProjectilePosition(Projectile _projectile)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.projectilePosition))
+        {
+            _packet.Write(_projectile.id);
+            _packet.Write(_projectile.transform.position);
+
+            SendUDPDataToAll(_packet);
+        }
+    }
+
+    public static void ProjectileExploded(Projectile _projectile)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.projectileExploded))
+        {
+            _packet.Write(_projectile.id);
+            _packet.Write(_projectile.transform.position);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
+
+    public static void SpawnEnemy(Enemy _enemy)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.spawnEnemy))
+        {
+            SendTCPDataToAll(SpawnEnemy_Data(_enemy, _packet));
+        }
+    }
+    public static void SpawnEnemy(int _toClient, Enemy _enemy)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.spawnEnemy))
+        {
+            SendTCPData(_toClient, SpawnEnemy_Data(_enemy, _packet));
+        }
+    }
+
+    private static Packet SpawnEnemy_Data(Enemy _enemy, Packet _packet)
+    {
+        _packet.Write(_enemy.id);
+        _packet.Write(_enemy.transform.position);
+        return _packet;
+    }
+
+    public static void EnemyPosition(Enemy _enemy)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.enemyPosition))
+        {
+            _packet.Write(_enemy.id);
+            _packet.Write(_enemy.transform.position);
+
+            SendUDPDataToAll(_packet);
+        }
+    }
+
+    public static void EnemyHealth(Enemy _enemy)
+    {
+        using (Packet _packet = new Packet((int)ServerPackets.enemyHealth))
+        {
+            _packet.Write(_enemy.id);
+            _packet.Write(_enemy.health);
+
+            SendTCPDataToAll(_packet);
+        }
+    }
     #endregion
 }
