@@ -6,6 +6,8 @@ using System.Net.Sockets;
 using System;
 
 public class Client : MonoBehaviour
+
+
 {
     public static Client instance;
     public static int dataBufferSize = 4096;
