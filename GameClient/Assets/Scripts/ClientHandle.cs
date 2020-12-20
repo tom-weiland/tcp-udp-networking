@@ -33,6 +33,11 @@ public class ClientHandle : MonoBehaviour
         int _id = _packet.ReadInt();
         Vector3 _position = _packet.ReadVector3();
 
+        if (_id == Client.instance.myId)
+        {
+            AntiCheat.DoCheck(_position);
+        }
+
         if (GameManager.players.TryGetValue(_id, out PlayerManager _player))
         {
             _player.transform.position = _position;

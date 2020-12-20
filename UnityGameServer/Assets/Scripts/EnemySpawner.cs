@@ -8,7 +8,8 @@ public class EnemySpawner : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(SpawnEnemy());
+        Debug.Log("enemies disabled due to bug");
+        //StartCoroutine(SpawnEnemy());
     }
 
     private IEnumerator SpawnEnemy()

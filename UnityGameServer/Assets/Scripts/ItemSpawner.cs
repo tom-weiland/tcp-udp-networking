@@ -9,7 +9,6 @@ public class ItemSpawner : MonoBehaviour
 
     public int spawnerId;
     public bool hasItem = false;
-
     private void Start()
     {
         hasItem = false;

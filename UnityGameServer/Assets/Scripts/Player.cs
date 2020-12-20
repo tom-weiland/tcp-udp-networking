@@ -100,6 +100,7 @@ public class Player : MonoBehaviour
 
     public void Shoot(Vector3 _viewDirection)
     {
+        Debug.Log("playershoot");
         if (health <= 0f)
         {
             return;
