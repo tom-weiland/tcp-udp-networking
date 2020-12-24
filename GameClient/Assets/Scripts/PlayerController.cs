@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        SharedVariables.clientTick++;
         SendInputToServer();
     }
 
@@ -57,8 +58,6 @@ public class PlayerController : MonoBehaviour
         MovePlayer(_inputs);
         ClientSend.PlayerMovement(_inputs);
     }
-
-    
 
     private void MovePlayer(bool[] inputs)
     {
@@ -86,6 +85,7 @@ public class PlayerController : MonoBehaviour
     private void Move(Vector2 _inputDirection, bool yDirection)
     {
         Vector3 _moveDirection = transform.right * _inputDirection.x + transform.forward * _inputDirection.y;
+        Debug.Log(transform.right);
         _moveDirection *= moveSpeed;
 
         bool isGrounded = controller.isGrounded;
@@ -102,6 +102,5 @@ public class PlayerController : MonoBehaviour
 
         _moveDirection.y = yVelocity;
         controller.Move(_moveDirection);
-
     }
 }

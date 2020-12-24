@@ -32,10 +32,24 @@ public class ClientHandle : MonoBehaviour
     {
         int _id = _packet.ReadInt();
         Vector3 _position = _packet.ReadVector3();
+        string serverSeconds = _packet.ReadString();
+        string serverMilliseconds = _packet.ReadString();
+        
+        try
+        {
+            PingServer.serverSeconds = int.Parse(serverSeconds);
+            PingServer.serverMilliseconds = int.Parse(serverMilliseconds);
+            PingServer.CalculatePing();
+        }
+        catch(System.Exception e)
+        {
+            Debug.Log($"hold tf up bro: {e}");
+        }
 
         if (_id == Client.instance.myId)
         {
             AntiCheat.DoCheck(_position);
+            return;
         }
 
         if (GameManager.players.TryGetValue(_id, out PlayerManager _player))

@@ -12,13 +12,15 @@ public class AntiCheat : MonoBehaviour
             PlayerController.controller.enabled = false;
             PlayerController.playerTransform.transform.position = new Vector3(serverPositon.x, PlayerController.playerTransform.position.y, PlayerController.playerTransform.position.z);
             PlayerController.controller.enabled = true;
+            Debug.Log("uh oh");
        }
        if (PlayerController.controller.transform.position.z != serverPositon.z)
        {
             PlayerController.controller.enabled = false;
             PlayerController.playerTransform.transform.position = new Vector3(PlayerController.playerTransform.position.x, PlayerController.playerTransform.position.y, serverPositon.z);
             PlayerController.controller.enabled = true;
-       }
+            Debug.Log("uh oh");
+        }
       
        else
        {
