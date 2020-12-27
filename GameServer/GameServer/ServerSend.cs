@@ -31,6 +31,24 @@ namespace GameServer
                 }
             }
         }
+        
+        private static void SendUDPData(int _toClient, Packet _packet)
+        {
+            _packet.WriteLength();
+            Server.clients[_toClient].udp.SendData(_packet);
+        }
+        
+        private static void SendUDPDataToAll(int _exceptClient, Packet packet)
+        {
+            packet.WriteLength();
+            for (int i = 1; i <= Server.MaxPlayers; i++)
+            {
+                if (i != _exceptClient)
+                {
+                    Server.clients[i].udp.SendData(packet);
+                }
+            }
+        }
 
         public static void Welcome(int _toClient, string _msg)
         {
