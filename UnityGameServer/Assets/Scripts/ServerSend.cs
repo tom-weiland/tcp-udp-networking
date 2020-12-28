@@ -111,8 +111,10 @@ public class ServerSend
         {
             _packet.Write(_player.id);
             _packet.Write(_player.transform.position);
+
             _packet.Write(System.DateTime.Now.Second.ToString());
             _packet.Write(System.DateTime.Now.Millisecond.ToString());
+
             SendUDPDataToAll(_packet);
         }
     }

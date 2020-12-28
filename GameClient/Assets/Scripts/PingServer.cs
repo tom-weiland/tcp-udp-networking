@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using System.Threading;
 using System.Threading.Tasks;
 using System;
+using UnityEngine;
 
 public class PingServer : MonoBehaviour
 {
@@ -28,6 +28,8 @@ public class PingServer : MonoBehaviour
         }
         else
         {
+            Debug.Log("test");
+            
             Debug.Log($"ping: {clientMilliseconds - serverMilliseconds} tick: {SharedVariables.clientTick}");
         }
     }

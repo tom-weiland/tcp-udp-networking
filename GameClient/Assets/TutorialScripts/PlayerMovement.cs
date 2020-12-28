@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+// Some stupid rigidbody based movement by Dani
+
+using System;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerMovement : MonoBehaviour 
 {
     public Transform camTransform;
 
@@ -36,13 +37,8 @@ public class PlayerController : MonoBehaviour
             Input.GetKey(KeyCode.LeftControl),
             Input.GetKey(KeyCode.Space)
         };
-        //moves player client side for client prediction
 
         ClientSend.PlayerMovement(_inputs);
     }
 
-    private void Awake()
-    {
-        Application.targetFrameRate = 30;
-    }
 }

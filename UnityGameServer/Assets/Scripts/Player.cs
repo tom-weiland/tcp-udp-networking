@@ -1,106 +1,149 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int id;
-    public string username;
-    public CharacterController controller;
-    public Transform shootOrigin;
-    public float gravity = -9.81f;
-    public float moveSpeed = 5f;
-    public float jumpSpeed = 5f;
-    public float throwForce = 600f;
-    public float health;
-    public float maxHealth = 100f;
+    //players items
     public int itemAmount = 0;
     public int maxItemAmount = 3;
+    public float throwForce = 600f;
 
+    //transform location of shoot origin
+    public Transform shootOrigin;
+
+    //player variables
+    public int id;
+    public string username;
+    public float health = 100;
+    public float maxHealth = 100f;
+
+    //client inputs
     private bool[] inputs;
-    private float yVelocity = 0;
 
+    //set variables
+    [SerializeField] private float speed, jumpForce;
+    [SerializeField] private float raycastDistance;
+
+    //x and y for player moving
+    private int x, y;
+
+    //is player crouching/is player jumping
+    private bool crouching, jumping;
+
+    private Rigidbody rb;
     private void Start()
     {
-        gravity *= Time.fixedDeltaTime * Time.fixedDeltaTime;
-        moveSpeed *= Time.fixedDeltaTime;
-        jumpSpeed *= Time.fixedDeltaTime;
+        rb = GetComponent<Rigidbody>();
     }
 
-    public void Initialize(int _id, string _username)
+    private void Update()
     {
-        id = _id;
-        username = _username;
-        health = maxHealth;
-
-        inputs = new bool[5];
+        GetInputs();
+        Jump();
     }
 
-    /// <summary>Processes player input and moves the player.</summary>
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (health <= 0f)
-        {
-            return;
-        }
-
-        Vector2 _inputDirection = Vector2.zero;
-        if (inputs[0])
-        {
-            _inputDirection.y += 1;
-        }
-        if (inputs[1])
-        {
-            _inputDirection.y -= 1;
-        }
-        if (inputs[2])
-        {
-            _inputDirection.x -= 1;
-        }
-        if (inputs[3])
-        {
-            _inputDirection.x += 1;
-        }
-
-        Move(_inputDirection);
-    }
-
-    /// <summary>Calculates the player's desired movement direction and moves him.</summary>
-    /// <param name="_inputDirection"></param>
-    private void Move(Vector2 _inputDirection)
-    {
-        Vector3 _moveDirection = transform.right * _inputDirection.x + transform.forward * _inputDirection.y;
-        _moveDirection *= moveSpeed;
-
-        if (controller.isGrounded)
-        {
-            yVelocity = 0f;
-            if (inputs[4])
-            {
-                yVelocity = jumpSpeed;
-            }
-        }
-        yVelocity += gravity;
-
-        _moveDirection.y = yVelocity;
-        controller.Move(_moveDirection);
-
+        Move();
         ServerSend.PlayerPosition(this);
         ServerSend.PlayerRotation(this);
     }
 
-    /// <summary>Updates the player input with newly received input.</summary>
-    /// <param name="_inputs">The new key inputs.</param>
-    /// <param name="_rotation">The new rotation.</param>
+    private void Move()
+    {
+        Vector3 movement = new Vector3(x, 0, y) * speed * Time.fixedDeltaTime;
+
+        Vector3 newPosition = rb.position + rb.transform.TransformDirection(movement);
+
+        rb.MovePosition(newPosition);
+    }
+
+    private void Jump()
+    {
+        if (jumping && IsGrounded())
+        {
+            Debug.Log("jumping");
+            rb.AddForce(0, jumpForce, 0, ForceMode.Impulse);
+        }
+    }
+
+    //sets player inputs and rotation
     public void SetInput(bool[] _inputs, Quaternion _rotation)
     {
         inputs = _inputs;
         transform.rotation = _rotation;
     }
 
+    /// <summary>Processes player input and moves the player.</summary>
+    public void GetInputs()
+    {
+        if (health <= 0f)
+        {
+            return;
+        }
+
+        y = 0;
+        x = 0;
+
+        if (inputs[0])
+        {
+            y += 1;
+        }
+
+        if (inputs[1])
+        {
+            y -= 1;
+        }
+
+        if (inputs[2])
+        {
+            x -= 1;
+        }
+
+        if (inputs[3])
+        {
+            x += 1;
+        }
+
+        if (inputs[4])
+        {
+            crouching = true;
+        }
+        else
+        {
+            crouching = false;
+        }
+
+        if (inputs[5])
+        {
+            jumping = true;
+        }
+        else
+        {
+            jumping = false;
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, raycastDistance);
+    }
+
+    public bool AttemptPickupItem()
+    {
+        if (itemAmount >= maxItemAmount)
+        {
+            return false;
+        }
+
+        itemAmount++;
+        return true;
+    }
+
     public void Shoot(Vector3 _viewDirection)
     {
-        Debug.Log("playershoot");
         if (health <= 0f)
         {
             return;
@@ -119,6 +162,27 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void TakeDamage(float _damage)
+    {
+        if (health <= 0f)
+        {
+            return;
+        }
+
+        health -= _damage;
+        if (health <= 0f)
+        {
+            health = 0f;
+            rb.isKinematic = false;
+            rb.detectCollisions = false;
+            transform.position = new Vector3(0f, 25f, 0f);
+            ServerSend.PlayerPosition(this);
+            StartCoroutine(Respawn());
+        }
+
+        ServerSend.PlayerHealth(this);
+    }
+
     public void ThrowItem(Vector3 _viewDirection)
     {
         if (health <= 0f)
@@ -133,24 +197,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float _damage)
+    public void Initialize(int _id, string _username)
     {
-        if (health <= 0f)
-        {
-            return;
-        }
+        id = _id;
+        username = _username;
+        health = maxHealth;
 
-        health -= _damage;
-        if (health <= 0f)
-        {
-            health = 0f;
-            controller.enabled = false;
-            transform.position = new Vector3(0f, 25f, 0f);
-            ServerSend.PlayerPosition(this);
-            StartCoroutine(Respawn());
-        }
-
-        ServerSend.PlayerHealth(this);
+        inputs = new bool[6];
     }
 
     private IEnumerator Respawn()
@@ -158,18 +211,10 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(5f);
 
         health = maxHealth;
-        controller.enabled = true;
+        rb.isKinematic = true;
+        rb.detectCollisions = true;
         ServerSend.PlayerRespawned(this);
     }
-
-    public bool AttemptPickupItem()
-    {
-        if (itemAmount >= maxItemAmount)
-        {
-            return false;
-        }
-
-        itemAmount++;
-        return true;
-    }
 }
+
+
