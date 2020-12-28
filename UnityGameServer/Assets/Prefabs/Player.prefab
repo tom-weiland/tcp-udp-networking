@@ -152,7 +152,7 @@ MonoBehaviour:
   maxHealth: 100
   speed: 5
   jumpForce: 4
-  raycastDistance: 1
+  raycastDistance: 1.1
 --- !u!54 &5839466788006934678
 Rigidbody:
   m_ObjectHideFlags: 0
