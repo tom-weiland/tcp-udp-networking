@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "UU7uHBEYij1AemhELQEK/D4/ECk284N1bQnJePOuPIGBSTnLerHuG5l63apc21MYTP2m9IVFTI+/Jys/+yKYpQ==",
+  "dgSpecHash": "e1EhwYvtYoQIyedmnHcrP/LvwL/p3qQRiFI02GUF3pbfwWWKF6AKC01Lto6qOBdBQbMkjn2Zm0x5fb1i/CgBfw==",
   "success": true,
   "projectFilePath": "D:\\tomdw\\Documents\\Programming\\Networking\\Tutorial\\GameServer\\GameServer\\GameServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\tomdw\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\tomdw\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.0.1\\microsoft.aspnetcore.app.ref.3.0.1.nupkg.sha512",
     "C:\\Users\\tomdw\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\tomdw\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.0.3\\microsoft.netcore.app.host.win-x64.3.0.3.nupkg.sha512",
